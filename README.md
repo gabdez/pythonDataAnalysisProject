@@ -1,6 +1,9 @@
 # Python for Data Analysis Project A5
 A5 Project of "Data for python analysis"
 
+## From
+Alexis JAMBUT - Gabriel FERNANDEZ CASA
+
 ## Project description
 - Analyse a given dataset
 - Powerpoint presentation on this dataset
@@ -84,6 +87,3 @@ The attributes of data are described as follows:-
     58. abs_title_subjectivity:        Absolute subjectivity level
     59. abs_title_sentiment_polarity:  Absolute polarity level
     60. shares:                        Number of shares (target)
-
-## Students
-Alexis JAMBUT - Gabriel FERNANDEZ CASA
