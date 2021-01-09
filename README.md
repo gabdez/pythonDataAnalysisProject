@@ -13,6 +13,9 @@ Alexis JAMBUT - Gabriel FERNANDEZ CASA
 ## Dataset
 https://archive.ics.uci.edu/ml/datasets/Online+News+Popularity
 
+## Dataset Prediction Goal
+With this dataset, our goal will be to predict the popularity of an article (according to the number of shares of an article) thanks to the different features of the dataset
+
 ## Dataset description
 
 The attributes of data are described as follows:-
