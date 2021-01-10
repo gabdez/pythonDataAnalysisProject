@@ -21,8 +21,9 @@ With this dataset, our goal will be to predict the popularity of an article (acc
 Run the server api in local `python api.py`
 
 Endpoints of our API:
-     *`/predict_popularity/<int:article_id>` -> return this kind of object `{"is_truly_popular": true,"message": "Prediction exacte","prediction": true}`
-     * `/max_article_nbr` -> return the max article number possible to predict
+
+*`/predict_popularity/<int:article_id>` -> return this kind of object `{"is_truly_popular": true,"message": "Prediction exacte","prediction": true}`
+* `/max_article_nbr` -> return the max article number possible to predict
 
 You can run our `request.py` to directly ask your api running in local
 
