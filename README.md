@@ -25,7 +25,7 @@ After some data processing and data normalisation. We run some classifier models
 * Adaboost
 * Gradient boost
 
-We get this result:
+We get thoose results:
 |        | knn        | Random forest           | Adaboost |  Gradient boost
 | ------------- | ------------- |:-------------:| -----:| -----:|
 | Accuracy      | 0.60 | 0.66 | 0.65 | 0.66 |
@@ -33,6 +33,7 @@ We get this result:
 
 Our best model get 66% of good prediction. Its not that good but we can see with the ROC that it can be improve up to 0.72.
 This 66% of prediction maybe mean that the dataset have not enought features to get good prediction accuracy.
+
 We use Random forest classifier in our api.
 
 ## API
