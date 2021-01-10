@@ -14,7 +14,8 @@ Alexis JAMBUT - Gabriel FERNANDEZ CASA
 https://archive.ics.uci.edu/ml/datasets/Online+News+Popularity
 
 ## Dataset Prediction Goal
-With this dataset, our goal will be to predict the popularity of an article (according to the number of shares of an article) thanks to the different features of the dataset
+With this dataset, our goal will be to predict the popularity of an article (according to the number of shares of an article) thanks to the different features of the dataset.
+We decided to take the classification approach of this problem by creating two class (popular > 1400 shares / unpopular < 1400 shares) based on number of shares of an article.
 
 ## Result
 
