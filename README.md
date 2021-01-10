@@ -16,6 +16,25 @@ https://archive.ics.uci.edu/ml/datasets/Online+News+Popularity
 ## Dataset Prediction Goal
 With this dataset, our goal will be to predict the popularity of an article (according to the number of shares of an article) thanks to the different features of the dataset
 
+## Result
+
+After some data processing and data normalisation. We run some classifier models
+
+* Knn
+* Random forest
+* Adaboost
+* Gradient boost
+
+We get this result:
+|        | knn        | Random forest           | Adaboost |  Gradient boost
+| ------------- | ------------- |:-------------:| -----:| -----:|
+| Accuracy      | 0.60 | 0.66 | 0.65 | 0.66 |
+| ROC      | 0.61      |   0.72 |   0.71 |  0.72 |
+
+Our best model get 66% of good prediction. Its not that good but we can see with the ROC that it can be improve up to 0.72.
+This 66% of prediction maybe mean that the dataset have not enought features to get good prediction accuracy.
+We use Random forest classifier in our api.
+
 ## API
 
 Run the server api in local `python api.py`
