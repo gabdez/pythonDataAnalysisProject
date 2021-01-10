@@ -3,7 +3,7 @@ import json
 
 url = 'http://127.0.0.1:5000/predict_popularity/'
 headers = {'Accept-Charset': 'UTF-8'}
-url1 = 'http://127.0.0.1:5000/articles'
+url1 = 'http://127.0.0.1:5000/max_article_nbr'
 result = requests.get(url1, headers=headers)
 max_range = json.loads(result.text)['articles_number']
 

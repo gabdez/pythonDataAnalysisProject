@@ -16,6 +16,15 @@ https://archive.ics.uci.edu/ml/datasets/Online+News+Popularity
 ## Dataset Prediction Goal
 With this dataset, our goal will be to predict the popularity of an article (according to the number of shares of an article) thanks to the different features of the dataset
 
+## API
+
+Run the server api in local `python api.py`
+Endpoints of our API:
+     ⋅⋅*`/predict_popularity/<int:article_id>` -> return this kind of object `{"is_truly_popular": true,"message": "Prediction exacte","prediction": true}`
+     ⋅⋅* `/max_article_nbr` -> return the max article number possible to predict
+
+You can run our `request.py` to directly ask your api running in local
+
 ## Dataset description
 
 The attributes of data are described as follows:-

@@ -24,25 +24,22 @@ def load_dataset():
     # Delete first column y_test
     first_column = y_test.columns[0]
     y_test = y_test.drop([first_column], axis=1)
-    print(y_test.shape)
 
 
 # Renvoi la prédiction de la popularité d'un article et si la prediction est bonne ou non
 @app.route('/predict_popularity/<int:article_id>', methods=['GET'])
 def make_prediction(article_id):
-    print(model)
     article = X_test.iloc[article_id]
     prediction = model.predict([article])
     is_popular = y_test.iloc[article_id]
-    print("is_popular ?")
-    print(is_popular)
-    print('-----')
-    print('prediction')
-    print(prediction[0])
-    return jsonify({"prediction":  bool(prediction[0])}), 200
+    message = "Prediction exacte"
+    if prediction[0] != is_popular['shares']:
+        message = "Prediction inexacte"
+    return jsonify({"prediction":  bool(prediction[0]), "is_truly_popular": bool(is_popular['shares']), "message": message}), 200
 
 
-@app.route('/articles', methods=['GET'])
+# Renvoi le nombre d'article présent dans le X_test
+@ app.route('/max_article_nbr', methods=['GET'])
 def get_articles_number():
     return jsonify({"articles_number": len(X_test.index)}), 200
 
